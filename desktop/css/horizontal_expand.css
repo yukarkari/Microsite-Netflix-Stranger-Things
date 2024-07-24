@@ -1,0 +1,41 @@
+.frame{
+	position:relative; 
+	width:1100px; 
+	height:1950px; 
+	margin:0 auto;
+}
+.horizontal_banner{
+	bottom: -50px;
+    height: 50px;
+    margin: auto;
+    position: fixed;
+	z-index:1;
+}
+.horizontal_expand-banner{
+	position:fixed;
+	height:250px;
+	widows:1100px;
+	margin:0 auto;
+	bottom: 0;
+	display:none;
+	z-index:2;
+	width: 1100px;
+}
+.horizontal_close-banner{
+	cursor: pointer;
+    display: block;
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+	z-index:3;
+}
+.horizontal_click-ad{
+	display: block;
+    height: 543px;
+    position: absolute;
+    top: 0;
+    width: 1100px;
+    z-index: 1;
+}

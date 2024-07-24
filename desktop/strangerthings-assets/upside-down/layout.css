@@ -1,0 +1,35 @@
+body {
+	background: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.ads-box-wrap:before, .ads-partner-wrap:before, .kcm__articleList:before, .kcm__big:before, .kcm__horizontal:before, .kcm__middle:before, .kcm__rectangle:before, .kcm__stick--left:before, .kcm__stick--right:before, .kcm__sticky:before, .kcm__superbig:before, .kcm__top:before, .kcm__tower:before, .kid-wrap:before, .mgid-wrap:before, .native-wrap:before, .popin-wrap:before, .vpaid-wrap:before {
+	display: none;
+}
+
+.kcm__horizontal {
+	min-height: auto;
+}
+
+.kcm__top {
+    min-height: auto;
+}
+
+.article__link {
+	padding-top: 7px;
+}
+
+.kcm__horizontal {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media (min-width: 1100px) {
+	.footer {
+	    width: 1100px;
+	}
+}

@@ -1,0 +1,221 @@
+#draggable {
+    float: left;
+    width: 140px;
+    height: 140px;
+    z-index: 9999;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+  animation: transY 3s infinite;
+  animation-direction: alternate;
+  }
+  
+  #draggable.is-pointer-down {
+    background: #09F;
+    z-index: 2; /* above other draggies */
+  }
+  
+  #draggable.is-dragging {
+    opacity: 0.7;
+  }
+  
+  #draggable {
+    left: 15px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    text-align: center;
+    bottom: 155px !important;
+    position: fixed !important;
+    background-size: 100% !important;
+  }
+  
+  #draggable img {
+    padding-top: 2px;
+  }
+  
+  .clik-draggable{
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+  background:red;
+    position: absolute !important;
+  }
+  
+  #draggable.is-pointer-down {
+  z-index: 2; /* above other draggies */
+  }
+  
+  #draggable.is-dragging {
+  opacity: 0.7;
+  }
+  
+  /*show banner*/
+  .draggable-banner {
+    left: 0;
+    right: 0;
+    top: -100%;
+    margin: auto;
+    width: 640px;
+    height: 480px;
+    z-index: 99999;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -moz-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      -o-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+         transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+  
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+         transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+  }
+  
+  .draggable-show {
+  margin: auto;
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  }
+  
+  .draggable-show img {
+    width: 100%;
+  }
+  
+  .close-banner {
+    top: 15px;
+    right: 50px;
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    z-index: 100000;
+    width: 50px;
+  }
+  
+  .close-swipe {
+    left: 5px;
+  bottom: 5px;
+    z-index: 999;
+    color: #fff;
+    font-size: 9px;
+    cursor: pointer;
+    font-family: arial;
+    position: absolute;
+  }
+  /*end show*/
+  
+  .droppable {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -75px;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    border-radius: 50%;
+  background:rgba(0, 0, 0, 0.5) url("../images/x-close.png") no-repeat scroll center center;
+  }
+  
+  .activee {
+  top: 120px;
+    animation: mymove 1s ;
+  -webkit-animation: mymove 1s ; /* Chrome, Safari, Opera */
+  }
+  
+  .ui-state-highlight,
+  .ui-widget-content .ui-state-highlight,
+  .ui-widget-header .ui-state-highlight {
+    color: #363636;
+    border: 1px solid #fcefa1;
+  }
+  
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+    0% { top: 60px; }
+    25% { top: 150px; }
+    100% { top: 120px; }
+  }
+  
+  /* Standard syntax */
+  @keyframes mymove {
+    0% { top: 60px; }
+    25% { top: 150px; }
+    100% { top: 120px; }
+  }
+  
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes transY {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(0, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  /* Standard syntax */
+  @keyframes transY {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(0, 20px); }
+  100% { transform: translate(0, 0); }
+  }
+
+
+.rotate-page{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+    top: 0;
+    left: 0;
+}
+
+.fullpinoverlay img{
+  width: 100%;
+}
+
+.fullpinoverlay{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;  
+  overflow-y:auto;
+
+  -webkit-transform:rotate(180deg) scale(3);
+  -moz-transform:rotate(180deg) scale(3);
+  -ms-transform:rotate(180deg) scale(3);
+  -o-transform:rotate(180deg) scale(3);
+  transform:rotate(180deg) scale(3);
+
+  -webkit-filter: blur(50px); 
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px); -ms-filter: blur(50px); 
+  filter: url(#blur); filter: blur(50px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');  
+
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.fullpinoverlay.nobluer{
+  -webkit-filter: blur(0); 
+  -moz-filter: blur(0);
+  -o-filter: blur(0); 
+  -ms-filter: blur(0); 
+  filter: url(#blur); 
+  filter: blur(0);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+
+  -webkit-transform:rotate(180deg) scale(1);
+  -moz-transform:rotate(180deg) scale(1);
+  -ms-transform:rotate(180deg) scale(1);
+  -o-transform:rotate(180deg) scale(1);
+  transform:rotate(180deg) scale(1);
+}

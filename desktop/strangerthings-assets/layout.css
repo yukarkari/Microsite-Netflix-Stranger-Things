@@ -1,0 +1,248 @@
+body {
+	/*background: url('bg-root.jpg');*/
+	background: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.ads-box-wrap:before, .ads-partner-wrap:before, .kcm__articleList:before, .kcm__big:before, .kcm__horizontal:before, .kcm__middle:before, .kcm__rectangle:before, .kcm__stick--left:before, .kcm__stick--right:before, .kcm__sticky:before, .kcm__superbig:before, .kcm__top:before, .kcm__tower:before, .kid-wrap:before, .mgid-wrap:before, .native-wrap:before, .popin-wrap:before, .vpaid-wrap:before {
+	display: none;
+}
+
+.kcm__horizontal {
+	min-height: auto;
+}
+
+.kcm__top {
+    min-height: auto;
+}
+
+.kcm__horizontal {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.strangerthings-video-wrap {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	display: none;
+
+	  -webkit-filter: blur(50px); 
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px); -ms-filter: blur(50px); 
+  filter: url(#blur); filter: blur(50px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');  
+
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  transform: scale(0.9, 0.9);
+  opacity: 0;
+}
+
+.strangerthings-video-wrap.nobluer{
+  -webkit-filter: blur(0); 
+  -moz-filter: blur(0);
+  -o-filter: blur(0); 
+  -ms-filter: blur(0); 
+  filter: url(#blur); 
+  filter: blur(0);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+.strangerthings-video-wrap-show {
+	display: block;
+}
+
+.strangerthings-overlay-video-wrap {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	background: #000;
+}
+.strangerthings-overlay-video-wrap video {
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+}
+.strangerthings-btn-next {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	transition: 0.3s ease;
+	cursor: pointer;
+	width: 197px;
+}
+.strangerthings-btn-next:hover {
+	opacity: 0.7;
+}
+.strangerthings-btn-close {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.strangerthings-btn-close:hover {
+	opacity: 0.7;
+}
+
+.strangerthings-normalize-wrap {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 110000;
+	left: 0;
+	top: 0;
+	background: url('upside-down/bg-normalize.png');
+	display: none;
+		  -webkit-filter: blur(50px); 
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px); -ms-filter: blur(50px); 
+  filter: url(#blur); filter: blur(50px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');  
+
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  transform: scale(1.1, 1.1);
+}
+
+.strangerthings-normalize-wrap.show{
+	display: block;
+}
+
+.strangerthings-normalize-wrap.showfx {
+	-webkit-filter: blur(0); 
+  -moz-filter: blur(0);
+  -o-filter: blur(0); 
+  -ms-filter: blur(0); 
+  filter: url(#blur); 
+  filter: blur(0);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  transform: scale(1, 1);
+}
+
+.strangerthings-normalize-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url('upside-down/overlay-normal-bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 394px;
+}
+
+.strangerthings-normalize-close {
+	width: 30px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.strangerthings-normalize-next {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 50px;
+	width: 110px;
+	cursor: pointer;
+}
+
+.strangerthings-normalize-next:hover {
+	opacity: 0.5;
+}
+
+.normalize-rotate {
+	transition: 0.2s ease !important;
+	transform:rotate(0deg) !important;
+}
+
+.strangerthings-bg-root {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	user-select: none;
+	transition: 0.5s ease;
+    transform: scale(1.1, 1.1);
+    opacity: 0;
+}
+
+.strangerthings-bg-root img {
+	width: 100%;
+	height: 100vh;
+}
+
+.strangerthings-bg-root-show {
+	transform: scale(1, 1);
+    opacity: 1;
+}
+
+.strangerthings-btn-audio {
+	position: absolute;
+	right: 110px;
+	top: 50px;
+	transition: 0.3s ease;
+	height: 38px;
+	width: 38px;
+	background-size: cover;
+	background-position: center;
+	background-color: transparent;
+	z-index: 10000;
+	cursor: pointer;
+	border: none;
+	margin: 0;
+}
+
+.strangerthings-icon-mute {
+	background-image: url('icon-audio-mute.png');
+}
+
+.strangerthings-icon-unmute {
+	background-image: url('icon-audio-unmute.png');
+}
+
+#audio-control {
+	position: absolute;
+	right: 110px;
+	top: 50px;
+	transition: 0.3s ease;
+	height: 38px;
+	width: 38px;
+	background-size: cover;
+	background-position: center;
+	background-color: transparent;
+	z-index: 10000;
+	cursor: pointer;
+	border: none;
+	margin: 0;
+}
+
+.btn-unmute {
+	display: none;
+}
+
+#audio-control img {
+	object-fit: cover;
+	object-position: 50% 50%;
+	vertical-align: middle;
+	width: 100%;
+}
